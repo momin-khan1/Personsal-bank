@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bapp-er-Bank</title>
+    <!-- TailWind-css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- My ccs -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center m-16">Welcome to my <span class="font-semibold text-red-600">personal Bank </span>!!!</h1>
+    </header>
+    <main>
+        <section class="bg-red-400 w-2/4 mx-auto py-7 pl-5 text-xl">
+            <h3 class="font-semibold text-white mb-4 text-2xl">Please Login</h3>
+            <form action="">
+                <input id="user-email" type="text" placeholder="Your Email" class="block mb-5 w-3/4 rounded border pl-2 py-1">
+                <input type="password" name="" id="user-password" placeholder="Type Password" class="block mb-5 w-3/4 rounded border pl-2 py-1">
+            </form>
+            <button id="buttonSubmit" class="bg-purple-500 text-white py-2 px-5 text-center rounded text-auto text-right font-semibold">Submit</button>
+        </section>
+    </main>
+    <script src="js/login.js"></script>
+</body>
+</html>

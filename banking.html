@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Site</title>
+    <!-- TailWind-css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl font-semibold text-center m-16">Let's Get Some <span class="font-bold text-green-900">Dollers </span>!!!</h1>
+    </header>
+    <main class="mx-auto w-3/4">
+        <section>
+            <div class="grid grid-cols-3 gap-5">
+                <div class="bg-green-600 p-10 rounded">
+                    <h3 class="text-2xl mb-2 text-white font-semibold text-center">Deposite</h3>
+                    <h4 class="text-4xl text-white font-bold text-center">$<span id="total-deposite" >00</span></h4>
+                </div>
+                <div class="bg-green-700 p-10 rounded">
+                    <h3 class="text-2xl mb-2 text-white font-semibold text-center">Withdraw</h3>
+                    <h4 class="text-4xl text-white font-bold text-center">$<span id="total-withdraw" >7686</span></h4>
+                </div>
+                <div class="bg-green-800 p-10 rounded">
+                    <h3 class="text-2xl mb-2 text-white font-semibold text-center">Balance</h3>
+                    <h4 class="text-4xl text-white font-bold text-center">$<span id="total-balance">8000</span></h4>
+                </div>
+            </div>
+        </section>
+        <!-- bank Deposite and Withdraw option -->
+        <section class="mt-5">
+            <div class="grid grid-cols-2 gap-5">
+                <!-- Deposite -->
+                <div class="bg-purple-800 p-10 rounded">
+                    <h3 class="text-3xl font-semibold text-white mb-4">Please Deposite</h3>
+                    <form action="">
+                         <input id="my-deposite" type="text" placeholder="$ Amount you want to deposit" class="block mb-5 w-3/4 rounded border pl-2 py-1">
+                    </form>
+                     <button id="deposite-button" class="bg-purple-500 text-white py-2 px-5 text-center rounded text-auto text-right font-semibold">Submit</button>
+                </div>
+                <!-- Withdraw -->
+                <div class="bg-purple-900 p-10 rounded">
+                    <h3 class="text-3xl font-semibold text-white mb-4">Please Withdraw</h3>
+                    <form action="">
+                         <input id="my-Withdraw" type="text" placeholder="$ Amount you want to Withdraw" class="block mb-5 w-3/4 rounded border pl-2 py-1">
+                    </form>
+                     <button id="Withdraw-button" class="bg-purple-500 text-white py-2 px-5 text-center rounded text-auto text-right font-semibold">Submit</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- script -->
+    <script src="js/bankig.js"></script>
+</body>
+</html>
